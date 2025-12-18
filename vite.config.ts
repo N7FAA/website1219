@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'terser',
+    minify: 'esbuild', // 使用 esbuild（Vite 默认，更快且无需额外依赖）
     rollupOptions: {
       output: {
         manualChunks: {
